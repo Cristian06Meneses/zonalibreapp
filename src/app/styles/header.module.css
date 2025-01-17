@@ -1,0 +1,135 @@
+/* Header principal */
+.header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+/* Logo */
+.logo span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Botón de hamburguesa */
+.hamburger {
+  display: none;
+  margin-left: auto;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Navegación */
+.nav ul {
+  display: flex; /* Asegura que los elementos sean visibles en pantallas grandes */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav.show ul {
+  flex-direction: column; /* Cambia a diseño vertical en pantallas pequeñas */
+  background-color: #fff;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.nav li {
+  margin: 0.5rem;
+}
+
+/* Estilo para enlaces */
+.nav span {
+  color: #555;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav span:hover {
+  color: #007bff;
+}
+
+/* Botón de acción */
+.cta {
+  display: flex;
+}
+
+.cta span a {
+  background-color: #0118E0;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.cta span a:hover {
+  background-color: #0056b3;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+  .header {
+    position: fixed; /* Se queda completamente fijo en pantallas grandes */
+    width: 100%;     /* Asegura que ocupe toda la anchura */
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav ul {
+    display: none; /* Oculta el menú en pantallas pequeñas por defecto */
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-20%);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+
+  .nav.show ul {
+    display: flex;
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .nav li {
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+
+  .cta {
+    display: none; /* Ocultar en pantallas pequeñas */
+  }
+}
