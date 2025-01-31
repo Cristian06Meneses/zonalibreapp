@@ -4,7 +4,7 @@ import Link from "next/link";
 import styles from "./styles/header.module.css";
 import Image from "next/image";
 import { useState } from "react";
-import { alfa_slab_one } from "./fonts";
+import { inter_tight } from "./fonts";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,10 +18,10 @@ const Header = () => {
       <div className={styles.container}>
         {/* Logo */}
         <div className={styles.logo}>
-          <span className={`${alfa_slab_one.className} antialiased`}>
+          <span className={`${inter_tight.className} antialiased`}>
             <Link href="/">
               <Image
-                src="/zonalibrelogo1.png"
+                src="/zonalibrelogo2.png"
                 alt="ZonaLibre"
                 layout="intrinsic"
                 width={120}
@@ -44,23 +44,18 @@ const Header = () => {
         <nav className={`${styles.nav} ${menuOpen ? styles.show : ""}`}>
           <ul>
             <li>
-              <span className={`${alfa_slab_one.className} antialiased`}>
-                <Link href="/about">Sobre Nosotros</Link>
+              <span className={`${inter_tight.className} antialiased`}>
+                <Link href="/sobrenosotros">Sobre Nosotros</Link>
               </span>
             </li>
             <li>
-              <span className={`${alfa_slab_one.className} antialiased`}>
-                <Link href="/products">Productos</Link>
+              <span className={`${inter_tight.className} antialiased`}>
+                <Link href="/productos">Productos</Link>
               </span>
             </li>
             <li>
-              <span className={`${alfa_slab_one.className} antialiased`}>
-                <Link href="/services">Servicios</Link>
-              </span>
-            </li>
-            <li>
-              <span className={`${alfa_slab_one.className} antialiased`}>
-                <Link href="/contact">Contacto</Link>
+              <span className={`${inter_tight.className} antialiased`}>
+                <Link href="/contacto">Contacto</Link>
               </span>
             </li>
           </ul>
@@ -68,8 +63,8 @@ const Header = () => {
 
         {/* Botón de acción */}
         <div className={styles.cta}>
-          <span className={`${alfa_slab_one.className} antialiased`}>
-            <Link href="/contact">¡Contáctanos!</Link>
+          <span className={`${inter_tight.className} antialiased`}>
+            <Link href="/contacto">¡Contáctanos!</Link>
           </span>
         </div>
       </div>

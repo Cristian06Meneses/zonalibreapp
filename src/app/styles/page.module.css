@@ -1,168 +1,222 @@
-.page {
-  --gray-rgb: 0, 0, 0;
-  --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
-  --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
-
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-
-  display: grid;
-  grid-template-rows: 20px 1fr 20px;
-  align-items: center;
-  justify-items: center;
-  min-height: 100svh;
-  padding: 80px;
-  gap: 64px;
-  font-family: var(--font-geist-sans);
-}
-
-@media (prefers-color-scheme: dark) {
-  .page {
-    --gray-rgb: 255, 255, 255;
-    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
-    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-  }
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  grid-row-start: 2;
-}
-
-.main ol {
-  font-family: var(--font-geist-mono);
-  padding-left: 0;
+.home {
   margin: 0;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: -0.01em;
-  list-style-position: inside;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-.main li:not(:last-of-type) {
-  margin-bottom: 8px;
-}
-
-.main code {
-  font-family: inherit;
-  background: var(--gray-alpha-100);
-  padding: 2px 4px;
-  border-radius: 4px;
-  font-weight: 600;
-}
-
-.ctas {
+/* Sección principal (pantalla completa) */
+.hero {
+  height: 100vh; /* Altura completa de la pantalla */
+  background: url('/imagenZonaLibre1.png') no-repeat center center/cover;
   display: flex;
-  gap: 16px;
-}
-
-.ctas a {
-  appearance: none;
-  border-radius: 128px;
-  height: 48px;
-  padding: 0 20px;
-  border: none;
-  border: 1px solid transparent;
-  transition:
-    background 0.2s,
-    color 0.2s,
-    border-color 0.2s;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 500;
-}
-
-a.primary {
-  background: var(--foreground);
-  color: var(--background);
-  gap: 8px;
-}
-
-a.secondary {
-  border-color: var(--gray-alpha-200);
-  min-width: 180px;
-}
-
-.footer {
-  grid-row-start: 3;
-  display: flex;
-  gap: 24px;
-}
-
-.footer a {
-  display: flex;
   align-items: center;
-  gap: 8px;
+  text-align: center;
+  color: white;
+  position: relative;
 }
 
-.footer img {
-  flex-shrink: 0;
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Oscurece la imagen */
+  z-index: 1;
 }
 
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
+.hero .content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #0118E0;
+  -webkit-text-stroke: 0.1px #0118E0;
+  cursor: default;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+  cursor: default;
+}
+
+/* Estilo base para contenido */
+.content {
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Fondo para la sección de productos */
+.productSection {
+  background-image: url('/zlimg5h.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Oscurecer fondo de la sección de productos */
+.productSection::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Oscurece la imagen */
+  z-index: 1;
+}
+
+.productSection .content {
+  position: relative;
+  z-index: 2;
+}
+
+.productSection h2 {
+  font-size: 2.5rem;
+  color: #0118E0;
+  -webkit-text-stroke: 0.1px #0118E0;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  cursor: default;
+}
+
+.productSection p {
+  font-size: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+  cursor: default;
+}
+
+/* Fondo para la sección de contacto */
+.contactSection {
+  background-image: url('/zlimg4h.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactSection::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Oscurece la imagen */
+  z-index: 1;
+}
+
+.contactSection .content {
+  position: relative;
+  z-index: 2;
+}
+
+.contactSection h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #0118E0;
+  -webkit-text-stroke: 0.1px #0118E0;
+  cursor: default;
+}
+
+.contactSection p {
+  font-size: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+  cursor: default;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
   }
 
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
+  .hero p {
+    font-size: 1.1rem;
   }
 
-  .footer a:hover {
-    text-decoration: underline;
-    text-underline-offset: 4px;
+  .productSection h2 {
+    font-size: 2rem;
+  }
+
+  .productSection p {
+    font-size: 1rem;
+  }
+
+  .contactSection h2 {
+    font-size: 2rem;
+  }
+
+  .contactSection p {
+    font-size: 1rem;
+  }
+
+  .productSection {
+    background-image: url('/zlimg5v.jpg');
+  }
+
+  .contactSection {
+    background-image: url('/zlimg4v.jpg');
   }
 }
 
-@media (max-width: 600px) {
-  .page {
-    padding: 32px;
-    padding-bottom: 80px;
-  }
-
-  .main {
-    align-items: center;
-  }
-
-  .main ol {
-    text-align: center;
-  }
-
-  .ctas {
-    flex-direction: column;
-  }
-
-  .ctas a {
-    font-size: 14px;
-    height: 40px;
-    padding: 0 16px;
-  }
-
-  a.secondary {
-    min-width: auto;
-  }
-
-  .footer {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
+.hero,
+.productSection, 
+.contactSection {
+  position: relative;
+  z-index: 2;
 }
 
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
-  }
+/* Efectos de hover para los textos */
+
+/* Primera sección */
+.hero h1:hover {
+  transform: scale(1.1); /* Aumenta el tamaño ligeramente */
+  color: #0026FF;
+  transition: transform 0.3s ease, color 0.3s ease; /* Añade suavidad al efecto */
+}
+
+.hero p:hover {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño del texto */
+  transition: transform 0.3s ease, color 0.3s ease; /* Suaviza la transición */
+}
+
+/* Segunda sección */
+.productSection h2:hover {
+  transform: scale(1.1); /* Efecto de agrandamiento */
+  color: #0046FF; /* Cambia a un azul diferente */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.productSection p:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Tercera sección */
+.contactSection h2:hover {
+  transform: scale(1.1);
+  color: #005AFF;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contactSection p:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease, color 0.3s ease;
 }

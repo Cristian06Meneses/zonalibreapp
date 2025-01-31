@@ -1,0 +1,257 @@
+.home {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  padding-top: 100px;
+}
+
+/* Sección principal (pantalla completa) */
+.productos1 {
+  height: 100vh;
+  /* Altura completa de la pantalla */
+  background: url('/zlimg8h.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.productos1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* Oscurece la imagen */
+  z-index: 1;
+}
+
+.productos2 {
+  height: 100vh;
+  /* Altura completa de la pantalla */
+  background: url('/zlimg6h.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.productos2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* Oscurece la imagen */
+  z-index: 1;
+}
+
+.productos3 {
+  height: 100vh;
+  /* Altura completa de la pantalla */
+  background: url('/zlimg1h.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.productos3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* Oscurece la imagen */
+  z-index: 1;
+}
+
+.productos4 {
+  height: 100vh;
+  /* Altura completa de la pantalla */
+  background: url('/zlimg2h.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.productos4::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* Oscurece la imagen */
+  z-index: 1;
+}
+
+.productos5 {
+  height: 100vh;
+  /* Altura completa de la pantalla */
+  background: url('/zlimg3h.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.productos5::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* Oscurece la imagen */
+  z-index: 1;
+}
+
+.productos6 {
+  height: 100vh;
+  /* Altura completa de la pantalla */
+  background: url('/zlimg7h.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.productos6::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* Oscurece la imagen */
+  z-index: 1;
+}
+
+.productos1 .content,
+.productos2 .content,
+.productos3 .content,
+.productos4 .content,
+.productos5 .content,
+.productos6 .content {
+  position: relative;
+  z-index: 2;
+}
+
+.productos1 h1,
+.productos2 h1,
+.productos3 h1,
+.productos4 h1,
+.productos5 h1,
+.productos6 h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #0118E0;
+  -webkit-text-stroke: 0.1px #0118E0;
+  cursor: default;
+}
+
+.productos1 p,
+.productos2 p,
+.productos3 p,
+.productos4 p,
+.productos5 p,
+.productos6 p {
+  font-size: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+  cursor: default;
+}
+
+/* Estilo base para contenido */
+.content {
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+
+  .productos1 h1,
+  .productos2 h1,
+  .productos3 h1,
+  .productos4 h1,
+  .productos5 h1,
+  .productos6 h1 {
+    font-size: 2rem;
+  }
+
+  .productos1 p,
+  .productos2 p,
+  .productos3 p,
+  .productos4 p,
+  .productos5 p,
+  .productos6 p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Efectos de hover para los textos */
+
+/* Primera sección */
+.productos1 h1:hover,
+.productos2 h1:hover,
+.productos3 h1:hover,
+.productos4 h1:hover,
+.productos5 h1:hover,
+.productos6 h1:hover {
+  transform: scale(1.1);
+  /* Aumenta el tamaño ligeramente */
+  color: #0026FF;
+  transition: transform 0.3s ease, color 0.3s ease;
+  /* Añade suavidad al efecto */
+}
+
+@media (max-width: 768px) {
+  .productos1 {
+    background: url('/zlimg8v.jpg') no-repeat center center/cover;
+  }
+
+  .productos2 {
+    background: url('/zlimg6v.jpg') no-repeat center center/cover;
+  }
+
+  .productos3 {
+    background: url('/zlimg1v.jpg') no-repeat center center/cover;
+  }
+
+  .productos4 {
+    background: url('/zlimg2v.jpg') no-repeat center center/cover;
+  }
+
+  .productos5 {
+    background: url('/zlimg3v.jpg') no-repeat center center/cover;
+  }
+
+  .productos6 {
+    background: url('/zlimg7v.jpg') no-repeat center center/cover;
+  }
+}

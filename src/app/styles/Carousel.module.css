@@ -1,0 +1,49 @@
+.carouselContainer {
+    width: 100%;
+    /* Ajusta el ancho total */
+    height: 100px;
+    /* Ajusta la altura */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #ffffffa4;
+    padding: 10px;
+}
+
+.carousel {
+    display: flex;
+    gap: 10px;
+    /* Espaciado entre imágenes */
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    /* Oculta scrollbar en Firefox */
+    -ms-overflow-style: none;
+    /* Oculta scrollbar en IE/Edge */
+    width: 100%;
+    height: 100%;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+    /* Oculta scrollbar en Chrome/Safari */
+}
+
+.imageWrapper {
+    flex: 0 0 auto;
+    width: 200px;
+    /* Ajusta el ancho de cada imagen */
+    height: 180px;
+    /* Ajusta la altura de cada imagen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

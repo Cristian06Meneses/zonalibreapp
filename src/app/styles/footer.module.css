@@ -1,0 +1,72 @@
+.footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Estilo para los enlaces */
+.links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 2rem;
+}
+
+.links li :global(a) {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.links li :global(a:hover) {
+  color: #007bff; /* Color al pasar el mouse */
+}
+
+/* Redes sociales */
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.socials :global(a) {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: brightness(0) invert(1); /* Hace los íconos oscuros */
+}
+
+.socials :global(a:hover) {
+  transform: scale(1.1); /* Amplía ligeramente el ícono al hacer hover */
+}
+
+/* Especificar colores para cada red social */
+.socials :global(a:nth-child(1):hover) {
+  filter: brightness(0) saturate(100%) sepia(1) hue-rotate(200deg) brightness(1.2); /* Azul para Facebook */
+}
+
+.socials :global(a:nth-child(2):hover) {
+  filter: brightness(0) saturate(100%) sepia(1) hue-rotate(190deg) brightness(1.1); /* Azul celeste para Twitter */
+}
+
+.socials :global(a:nth-child(3):hover) {
+  filter: brightness(0) saturate(100%) sepia(1) hue-rotate(320deg) brightness(1.1); /* Rosa para Instagram */
+}
+
+/* Copyright */
+.copyright span {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  cursor: default;
+}
