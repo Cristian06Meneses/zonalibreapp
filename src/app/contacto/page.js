@@ -16,19 +16,21 @@ const Contact = () => {
 
       {/* Formulario de contacto */}
       <section className={styles.formSection}>
-        <form className={styles.form}>
+        <form className={styles.form} action="https://formsubmit.co/cristianmeneses979@gmail.com" method="POST"> {/*Por cambiar el correo*/}
           <label className={`${inter_tight.className} antialiased`} htmlFor="name">Nombre</label>
-          <input className={`${inter_tight.className} antialiased`} type="text" id="name" name="name" placeholder="Tu nombre" required />
+          <input className={`${inter_tight.className} antialiased`} type="text" id="name" name="Nombre" placeholder="Tu nombre" required />
 
           <label className={`${inter_tight.className} antialiased`} htmlFor="email">Correo Electrónico</label>
-          <input className={`${inter_tight.className} antialiased`} type="email" id="email" name="email" placeholder="Tu correo electrónico" required />
+          <input className={`${inter_tight.className} antialiased`} type="email" id="email" name="Correo" placeholder="Tu correo electrónico" required />
 
           <label className={`${inter_tight.className} antialiased`} htmlFor="message">Mensaje</label>
-          <textarea className={`${inter_tight.className} antialiased`} id="message" name="message" placeholder="Escribe tu mensaje aquí" rows="5" required></textarea>
+          <textarea className={`${inter_tight.className} antialiased`} id="message" name="Mensaje" placeholder="Escribe tu mensaje aquí" rows="5" required></textarea>
 
           <button type="submit" className={styles.submitButton}>
             Enviar
           </button>
+
+          <input type="hidden" name="_next" value="http://localhost:3000/contacto"></input>
         </form>
       </section>
 

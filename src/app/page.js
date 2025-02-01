@@ -1,12 +1,21 @@
-import styles from "./styles/page.module.css";
+import styles from "./styles/inicio.module.css";
 import { inter_tight } from "./fonts";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <div className={styles.home}>
       {/* Primera sección */}
-      <section className={styles.hero}>
+      <section className={styles.inicioSection}>
+        <Image
+          src="/imagenZonaLibre1.png"
+          alt="Zona Libre Inicio"
+          layout="fill"
+          objectFit="cover"
+          className={styles.backgroundImage}
+        />
+        <div className={styles.overlay}></div>
         <div className={styles.content}>
           <h1 className={`${inter_tight.className} antialiased`}>Bienvenido a Zona Libre Ferreteria</h1>
           <p className={`${inter_tight.className} antialiased`}>Todo lo que necesitas para construir tus sueños</p>
@@ -15,6 +24,14 @@ export default function Home() {
 
       {/* Segunda sección */}
       <section className={styles.productSection}>
+        <Image
+          src="/zlimg5h.jpg"
+          alt="Zona Libre Inicio"
+          layout="fill"
+          objectFit="cover"
+          className={styles.backgroundImage}
+        />
+        <div className={styles.overlay}></div>
         <div className={styles.content}>
           <Link href="/productos">
             <h2 className={`${inter_tight.className} antialiased`}>Nuestros Productos</h2>
@@ -25,6 +42,14 @@ export default function Home() {
 
       {/* Tercera sección */}
       <section className={styles.contactSection}>
+        <Image
+          src="/zlimg4h.jpg"
+          alt="Zona Libre Inicio"
+          layout="fill"
+          objectFit="cover"
+          className={styles.backgroundImage}
+        />
+        <div className={styles.overlay}></div>
         <div className={styles.content}>
           <Link href="/contacto">
             <h2 className={`${inter_tight.className} antialiased`}>Contáctanos</h2>

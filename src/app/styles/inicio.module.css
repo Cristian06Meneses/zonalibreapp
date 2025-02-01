@@ -1,0 +1,154 @@
+.home {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    padding-top: 100px;
+}
+
+.backgroundImage {
+    z-index: -1;
+}
+
+.inicioSection {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Mantiene el tamaño de pantalla completa */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.productSection {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Mantiene el tamaño de pantalla completa */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.contactSection {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Mantiene el tamaño de pantalla completa */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Oscurece la imagen */
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #0118E0;
+    -webkit-text-stroke: 0.1px #0118E0;
+    cursor: default;
+}
+
+.content p {
+    font-size: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+    cursor: default;
+}
+
+.productSection h2 {
+    font-size: 2.5rem;
+    color: #0118E0;
+    -webkit-text-stroke: 0.1px #0118E0;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    cursor: default;
+}
+
+.productSection p {
+    font-size: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+    cursor: default;
+}
+
+.contactSection h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #0118E0;
+    -webkit-text-stroke: 0.1px #0118E0;
+    cursor: default;
+}
+
+.contactSection p {
+    font-size: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+    cursor: default;
+}
+
+@media (max-width: 768px) {
+    .inicioSection h1 {
+        font-size: 2rem;
+    }
+
+    .inicioSection p {
+        font-size: 1.1rem;
+    }
+
+    .productSection h2 {
+        font-size: 2rem;
+    }
+
+    .productSection p {
+        font-size: 1rem;
+    }
+
+    .contactSection h2 {
+        font-size: 2rem;
+    }
+
+    .contactSection p {
+        font-size: 1rem;
+    }
+}
+
+/* Efectos de hover para los textos */
+
+/* Primera sección */
+
+.content h1:hover,
+h2:hover {
+    transform: scale(1.1); /* Aumenta el tamaño ligeramente */
+    color: #0026FF;
+    transition: transform 0.3s ease, color 0.3s ease; /* Añade suavidad al efecto */
+}
+
+.content p:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño del texto */
+    transition: transform 0.3s ease, color 0.3s ease; /* Suaviza la transición */
+}

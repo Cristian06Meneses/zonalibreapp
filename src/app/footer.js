@@ -13,6 +13,9 @@ const Footer = () => {
         <div className={styles.links}>
           <ul className={`${inter_tight.className} antialiased`}>
             <li>
+              <Link href="/">Inicio</Link>
+            </li>
+            <li>
               <Link href="/sobrenosotros">Sobre Nosotros</Link>
             </li>
             <li>
@@ -23,20 +26,20 @@ const Footer = () => {
 
         {/* Redes sociales */}
         <div className={styles.socials}>
-          <Link href="https://facebook.com">
+          {/*<Link href="https://facebook.com">
             <Image
               src="/facebookIcon.png"
               alt="Facebook"
-              width={45}
-              height={45}
+              width={40}
+              height={40}
             />
-          </Link>
-          <Link href="https://twitter.com">
+          </Link>*/}
+          <Link href="https://maps.app.goo.gl/JfpAuMvhXuwAF4Za6">
             <Image
-              src="/icons/twitter.svg"
-              alt="Twitter"
-              width={100}
-              height={100}
+              src="/mapsIcon.png"
+              alt="Google Maps"
+              width={40}
+              height={40}
             />
           </Link>
           <Link href="https://www.instagram.com/ferrezonalibre?igsh=MXBmNHphaGtpMms=">
