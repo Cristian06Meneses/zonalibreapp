@@ -141,8 +141,7 @@
 
 /* Primera sección */
 
-.content h1:hover,
-h2:hover {
+.content h1:hover, h2:hover {
     transform: scale(1.1); /* Aumenta el tamaño ligeramente */
     color: #0026FF;
     transition: transform 0.3s ease, color 0.3s ease; /* Añade suavidad al efecto */
