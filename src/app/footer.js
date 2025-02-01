@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import styles from "./styles/footer.module.css";
 import { inter_tight } from "./fonts";
