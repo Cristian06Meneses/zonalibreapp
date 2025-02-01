@@ -1,5 +1,3 @@
-"use client";
-
 import styles from "../styles/contacto.module.css";
 import { inter_tight } from "../fonts";
 
