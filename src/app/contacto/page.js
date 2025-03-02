@@ -16,7 +16,7 @@ const Contact = () => {
 
       {/* Formulario de contacto */}
       <section className={styles.formSection}>
-        <form className={styles.form} action="https://formsubmit.co/cristianmeneses979@gmail.com" method="POST"> {/*Por cambiar el correo*/}
+        <form className={styles.form} action="https://formsubmit.co/invezb1@gmail.com" method="POST"> {/*Por cambiar el correo*/}
           <label className={`${inter_tight.className} antialiased`} htmlFor="name">Nombre</label>
           <input className={`${inter_tight.className} antialiased`} type="text" id="name" name="Nombre" placeholder="Tu nombre" required />
 

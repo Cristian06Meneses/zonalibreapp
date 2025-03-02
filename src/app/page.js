@@ -9,7 +9,7 @@ export default function Home() {
       {/* Primera sección */}
       <section className={styles.inicioSection}>
         <Image
-          src="/imagenZonaLibre1.png"
+          src="/"
           alt="Zona Libre Inicio"
           layout="fill"
           objectFit="cover"
